@@ -6,16 +6,27 @@
     </head>
     <body>
         <h1>Calculator</h1>
-        <input id="num1" type="number">
-        <input id="num2" type="number">
+
+        <input id="num1" type="number" placeholder="Number 1">
+        <input id="num2" type="number" placeholder="Number 2">
+
         <select id="operation">
             <option value="add">+</option>
             <option value="subtract">-</option>
             <option value="multiply">*</option>
             <option value="divide">/</option>
         </select>
+
         <button onclick="calculate()">Calculate</button>
+
+        <button onclick="loadHistory()">
+            View History
+        </button>
+
         <h2 id="result"></h2>
+
+        <div id="history"></div>
+
         <script src="app.js"></script>
     </body>
 </html>
